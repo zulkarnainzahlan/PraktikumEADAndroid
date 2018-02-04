@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#a4e2e5"
+                tools:context="com.deqode.android.kasuspembelajaran1.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btabnormal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/jumlahPorsi"
+            android:layout_alignRight="@+id/jumlahPorsi"
+            android:layout_below="@+id/jumlahPorsi"
+            android:background="#F92789"
+            android:onClick="dosomething"
+            android:text="Abnormal"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorLink="@color/colorAccent"
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="289dp"/>
+
+        <Button
+            android:id="@+id/bteatbus"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/jumlahPorsi"
+            android:layout_alignStart="@+id/jumlahPorsi"
+            android:layout_below="@+id/jumlahPorsi"
+            android:background="#F92789"
+            android:onClick="doLagi"
+            android:text="Eatbus"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorLink="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/tvMakanMalam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text="Makan Malam"
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/menuMakanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/jumlahPorsi"
+            android:ems="10"
+            android:hint="Masukan Menu Makanan"
+            android:inputType="textPersonName"
+            android:text=""/>
+
+        <EditText
+            android:id="@+id/jumlahPorsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/menuMakanan"
+            android:layout_alignStart="@+id/menuMakanan"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Jumlah Porsi"
+            android:inputType="textPersonName"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMakanMalam"
+            android:layout_centerHorizontal="true"
+            android:text="dengan Milea"/>
+    </RelativeLayout>
+</RelativeLayout>
